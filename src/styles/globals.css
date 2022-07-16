@@ -93,6 +93,15 @@
 }
 
 @layer utilities {
+  .temp-button {
+    @apply -mx-1 border border-transparent py-2 pl-3 pr-2.5 text-center text-xs font-light tracking-wide  transition hover:bg-white/60 hover:text-cyan-700 dark:text-white dark:hover:text-cyan-200;
+  }
+  .temp-active {
+    @apply pointer-events-none bg-white/50 text-cyan-700;
+  }
+  .temp-inactive {
+    @apply text-gray-400 hover:border-gray-200/70 hover:shadow-md hover:shadow-gray-400/50 dark:hover:border-gray-50/10;
+  }
   .animated-underline {
     background-image: linear-gradient(#33333300, #33333300),
       linear-gradient(
